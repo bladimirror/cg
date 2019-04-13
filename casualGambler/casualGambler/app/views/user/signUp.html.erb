@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<p> Hello World - User </p>
+		<form class="" action='/'>
+			<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+			<input class="btn btn-primary" type='submit' value='Index' />
+		</form>
+
+		<!--*****************************************-->
+		<!--NEW USER REGISTRATION-->
+		<!--*****************************************-->
+		<h1>New User Registration</h1>
+		<form class="" action='/new_user' method='post'>
+			<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+			<p class="lead"> First Name: </p>
+			<input type='text' name='first_name'/>
+			<p class="lead"> Last Name: </p>
+			<input type='text' name='last_name'/>
+			<p class="lead"> Email: </p>
+			<input type='text' name='email'/>
+			<br><br>
+			<input class="btn btn-primary" type='submit' value='Register' />
+		</form>
+
+	</body>
+</html>

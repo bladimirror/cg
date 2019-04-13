@@ -1,0 +1,45 @@
+// Place all the styles related to the index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//GENERAL HTML CSS
+* {
+	margin: 0em;
+	padding: 0em;
+}
+
+//BODY - MASTER CONTAINER
+#container {
+	min-width: 32em;
+	max-width: 100%;
+	height: auto;
+	margin: 0.25em 0.25em 0.25em 0.25em;
+	vertical-align: middle;
+	display: block;
+	overflow: auto;
+	background-color: #fff;
+	font-family: 'Raleway', sans-serif;
+
+	border-color: red;
+	border-width: 1em;
+	border-style: solid;
+}
+
+//*****************************************
+//INDEX PAGE*******************************
+//*****************************************
+
+//IMAGE SIZE
+img {
+	min-height: auto;
+	max-height: 10%;
+	min-width: 10em;
+	max-width: 20%
+
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	color: blue;
+
+}
